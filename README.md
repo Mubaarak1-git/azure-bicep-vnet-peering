@@ -24,3 +24,28 @@ Azure VNet Peering
 Azure Resource Group
 Bicep
 Azure CLI
+
+## Repository Structure
+
+```text
+
+azure-bicep-vnet-peering/
+|__ bicep/   
+    |__ main.bicep
+    |__ vent1.bicep
+    |__ vent2.bicep
+    |__ peerings.bicep
+    |__ parameters.json
+```
+## Bicep Templates
+
+| File | Purpose |
+|--------|---------|
+|[main.bicep](./bicep/main.bicep) 📄| Main deployment template|
+|[vnet1.bicep](./bicep/vnet1.bicep)📄| Deploys the Production VNet|
+|[vent2.bicep](./bicep/vnet2.bicep)📄| Deploys the Development VNet|
+|[peerings.bicep](./bicep/peerings.bicep)📄| Configures biderctional VNet peerings|
+|[parameters.json](./bicep/parameters.json)📄| Stores deployment parameters|
+
+
+
